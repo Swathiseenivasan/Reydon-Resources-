@@ -32,14 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
         },
     });
 });
-const text=document.querySelector('.text')
-const textslist=['Reydon Resources ']
-let cindex=0
-let currenttext=textslist[0]
-textanimation()
-function textanimation(){
-    text.innerHTML=currenttext.slice(0,cindex)
-    cindex++
-   
-    setTimeout(textanimation,150)
-}
