@@ -14,18 +14,7 @@
   <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded",()=>{
-        fetch("./base.html").then(res=>{
-            if(!res.ok){
-                throw new Error("not fetch")
-            }
-            return res.text()
-        })
-        .then(html=>{
-            document.querySelector('.firstsection').innerHTML=html
-        })
-        .catch(err=>{
-            console.log(err)
-        })
+    
         fetch("./footer.html").then(response=>{
             if(!response.ok){
                 throw new Error("not fetech")
@@ -38,13 +27,142 @@
             console.log(err)
           })
          })
+         document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.querySelector(".menuiconc");
+            const navMenu = document.querySelector("nav ul");
+            menuButton.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });
+        });
 
  </script>
 </head>
 <body>
 <div class="main">
-    <div class="firstsection">
-    </div>
+    <div class="basesection">
+        <!-- navbar section -->
+        <div class="basesection">
+            <!-- navbar section -->
+            <header>
+              <div class="head">
+                  <a href="/"><h2>Reydon Resources</h2></a>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="./aboutus.html">About Us</a></li>
+                      <li><a href="">Projects</a></li>
+                      <li><a href="">Products & Services</a></li>
+                      <li><a href="#more" id="more">Gallery</a></li>
+                      <li>
+                          <a href="" id="more">More</a>
+                          <div class="submenu1">
+                              <a href=""><span>Contact us</span></a>
+                              <a href=""><span>Career</span></a>
+                              <a href=""><span>Channel Partner</span></a>
+                              <div class="social-icons2">
+                                <a href="https://www.instagram.com" target="_blank"><img src="./IMG/icon/instaicon.png" alt="" width="18px"></a>
+                                <a href="https://www.youtube.com" target="_blank"><img src="./IMG/icon/youtubeicon.png" alt="" width="18px"></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>  
+                             </div>
+                          </div>
+                      </li>
+                  </ul>
+              </nav>
+          </header>
+            <div class="enquiry">
+              <button>
+                 <span class="button-text"><i class="fa-solid fa-phone"></i> Sales Enquiry</span>
+                <span class="phone-number"><i class="fa-solid fa-phone"></i> 123-456-7890</span>
+              </button>
+            </div>
+            <!-- social media -->
+            <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank"><img src="./IMG/icon/instaicon.png" alt="" width="18px"></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="./IMG/icon/youtubeicon.png" alt="" width="18px"></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        
+          <div class="menuiconc">
+            <h2 class="menuiconc"><i class="fa fa-bars"></i></h2>
+          </div>
+    
+          <section>
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+                <li data-target="#carouselExample" data-slide-to="3"></li>
+              </ol>
+          
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="slider-in-con1 slider-img-con">
+                    <div class="innercontent">
+                      <h2 class="mb-1 innerheadsec">Welcome to</h2>
+                      <h3 class="innerheadsec">Reydon Resources Private Limited</h3>
+                      <h4 class="mt-4">Where your real estate dreams become reality</h4>
+                      <div class="in-con-btn mt-5">
+                        <a href=""><button><span>Learn More</span></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="carousel-item">
+                  <div class="slider-in-con2 slider-img-con">
+                    <div class="innercontent">
+                      <h2 class="mb-1">Our Mission</h2>
+                      <h4 class="mt-4">Provide exceptional real estate services that exceed expectations</h4>
+                      <div class="in-con-btn mt-4">
+                        <a href=""><button><span>Discover Our Mission</span></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="carousel-item">
+                  <div class="slider-in-con3 slider-img-con">
+                    <div class="innercontent">
+                      <h2 class="mb-1">What We Do</h2>
+                      <h4 class="mt-4">Comprehensive range of real estate services tailored to you</h4>
+                      <div class="in-con-btn mt-4">
+                        <a href=""><button><span>Explore Our Services</span></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="carousel-item">
+                  <div class="slider-in-con4 slider-img-con">
+                    <div class="innercontent">
+                      <h2 class="mb-1">Our values</h2>
+                      <h4 class="mt-4"> Integrity, excellence, innovation, and client-focused real estate solutions</h4>
+                      <div class="in-con-btn mt-4">
+                        <a href=""><button><span>Know More</span></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Controls -->
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </section>
+        </div>
+    
+     
     <section class="aboutus">
 
         <div class="about1">
