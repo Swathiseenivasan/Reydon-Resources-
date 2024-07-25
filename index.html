@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Playfair+Display:wght@700&display=swap"
     rel="stylesheet">
@@ -22,30 +22,30 @@
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script> 
-  <script> 
-   document.addEventListener("DOMContentLoaded",()=>{
-    fetch("./footer.html").then(response=>{
-      if(!response.ok){
+  <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("./footer.html").then(response => {
+        if (!response.ok) {
           throw new Error("not fetech")
-      }
-      return response.text();
-    }).then(html=>{
-      document.querySelector(".footercontent").innerHTML=html
+        }
+        return response.text();
+      }).then(html => {
+        document.querySelector(".footercontent").innerHTML = html
+      })
+        .catch(err => {
+          console.log(err)
+        })
     })
-    .catch(err=>{
-      console.log(err)
-    })
-   })
-   document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.querySelector(".menuiconc");
-    const navMenu = document.querySelector("nav ul");
-    menuButton.addEventListener("click", () => {
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuButton = document.querySelector(".menuiconc");
+      const navMenu = document.querySelector("nav ul");
+      menuButton.addEventListener("click", () => {
         navMenu.classList.toggle("show");
+      });
     });
-});
 
-    </script>
+  </script>
 
 </head>
 
@@ -56,34 +56,63 @@
       <!-- navbar section -->
       <header>
         <div class="head">
-            <a href="/"><h2>Reydon Resources</h2></a>
+          <a href="/">
+            <h2>Reydon Resources</h2>
+          </a>
         </div>
         <nav>
-            <ul>
-                <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Products & Services</a></li>
-                <li><a href="#more" id="more">Gallery</a></li>
-                <li>
-                    <a href="" id="more">More</a>
-                    <div class="submenu1">
-                        <a href=""><span>Contact us</span></a>
-                        <a href=""><span>Career</span></a>
-                        <a href=""><span>Channel Partner</span></a>
-                        <div class="social-icons2">
-                          <a href="https://www.instagram.com" target="_blank"><img src="./IMG/icon/instaicon.png" alt="" width="18px"></a>
-                          <a href="https://www.youtube.com" target="_blank"><img src="./IMG/icon/youtubeicon.png" alt="" width="18px"></a>
-                          <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>  
-                       </div>
-                    </div>
-                </li>
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a >Projects</a>
+              <div class="submenu1">
+                <a href="">Residential Plots
+                  <a href="">Residential Buildings</a>
+                  <a href="">Commercial Plots</a>
+                  <a href="">Commercial Buildings</a>
+                </a>
+              </div>
+            </li>
+            <li><a >Products & Services</a>
+              <div class="submenu1" style="width: 300px;">
+                <a href="">Lithium-ion Inverter 1 Kwa -5Kwa</a>
+                <a href="">Solar Systems</a>
+                <a href="">Charging Unit</a>
+                <a href="">Reydon-Interior Design</a>
+                <a href="">Reydon-Furnitures</a>
+                <a href="">Reydon-Designs</a>
+                <a href="">Installation & Service Call</a>
+              </div>
+            </li>
+            <li><a id="more">Gallery & Events</a>
+            <div class="submenu1">
+              <a href="">News / Events</a>
+              <a href="">Photo Gallery</a>
+            </div></li>
+            <li>
+              <a id="more">More</a>
+              <div class="submenu1">
+                <a href=""><span>Contact us</span></a>
+                <a href=""><span>Career</span></a>
+                <a href=""><span>Channel Partner</span></a>
+              </div>
+            </li>
+            <li>
+              <div class="social-icons2">
+                <a href="https://www.instagram.com" target="_blank"><img src="./IMG/icon/instaicon.png" alt=""
+                    width="18px"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="./IMG/icon/youtubeicon.png" alt=""
+                    width="18px"></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
       <div class="enquiry">
         <button>
-           <span class="button-text"><i class="fa-solid fa-phone"></i> Sales Enquiry</span>
+          <span class="button-text"><i class="fa-solid fa-phone"></i> Sales Enquiry</span>
           <span class="phone-number"><i class="fa-solid fa-phone"></i> 123-456-7890</span>
         </button>
       </div>
@@ -93,14 +122,14 @@
         <a href="https://www.youtube.com" target="_blank"><img src="./IMG/icon/youtubeicon.png" alt="" width="18px"></a>
         <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-  
-    <div class="menuiconc">
-      <h2 class="menuiconc"><i class="fa fa-bars"></i></h2>
-    </div>
+      </div>
+
+      <div class="menuiconc">
+        <h2 class="menuiconc"><i class="fa fa-bars"></i></h2>
+      </div>
       <!-- main intro section-->
       <section>
-  
+
         <section>
           <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
             <!-- Indicators -->
@@ -110,7 +139,7 @@
               <li data-target="#carouselExample" data-slide-to="2"></li>
               <li data-target="#carouselExample" data-slide-to="3"></li>
             </ol>
-        
+
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="slider-in-con1 slider-img-con">
@@ -124,7 +153,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="carousel-item">
                 <div class="slider-in-con2 slider-img-con">
                   <div class="innercontent">
@@ -136,7 +165,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="carousel-item">
                 <div class="slider-in-con3 slider-img-con">
                   <div class="innercontent">
@@ -148,7 +177,7 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="carousel-item">
                 <div class="slider-in-con4 slider-img-con">
                   <div class="innercontent">
@@ -161,7 +190,7 @@
                 </div>
               </div>
             </div>
-        
+
             <!-- Controls -->
             <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -173,239 +202,252 @@
             </a>
           </div>
         </section>
-      </div>
-  
-   
-  <!-- about us -->
-  <div class="aboutus mt-5 " >
-
-    <div class="parallex " >
-      <div class="about-content" data-aos="fade-right">
-       <div class="about-head">
-        <h2 class="">About us</h2>
-        <div class="line mb-4"></div>
-       </div>
-        <p>Welcome to <strong>"Reydon Resources Private Limited"</strong>, where your Real-estate dreams become reality. we are your trusted partner in real estate and allied trading & services. With years of experience and a deep understanding of the market, we are dedicated to helping you navigate the complexities of buying, selling, and managing properties. </div>
     </div>
-  </div>
-  <!-- services -->
-  <div class="services mt-5" data-aos="fade-down-right">
-    <h2 class="text-center">What We Do</h2>
-    <div class="line2 text-center mb-4"></div>
-    <p>We offer a comprehensive range of real estate services, including:</p>
-    <ul class="fa-ul">
-      <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Residential Sales and Rentals:</strong> Helping you buy, sell, or rent homes that match your lifestyle
-        and budget.</li>
-      <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Commercial Real Estate:</strong> Assisting businesses in finding the perfect location to thrive.</li>
-      <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Property Management:</strong> Providing top-notch management services to ensure your investment
-        properties are well-maintained and profitable. We handle all aspects of property management to maximize your
-        investment.</li>
-      <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Trading and Services:</strong> Providing all kinds of trading and services for extended quality of
-        unique products that directly and indirectly support real estate and property management services.</li>
-      <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Investment Opportunities:</strong> Guiding investors to make informed decisions and maximize their
-        returns.</li>
-    </ul>
-  </div>
-  <!-- Projects -->
-  <div class="projects mt-5 mb-3" data-aos="flip-down">
-    <div class="project_head d-flex flex-column align-items-center mb-4">
-      <h2 class="text-center">Our Projects</h2>
-    <div class="line text-center"></div>
-    </div>
-    <div class="swiper">
-      <div class="swiper-wrapper mt-3">
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="front"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-            <div class="back"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="front"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-            <div class="back"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="front"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-            <div class="back"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="front"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-            <div class="back"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="front"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-            <div class="back"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="front"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-            <div class="back"><span>
-              <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
-              <h2>Investment Villa Plot</h2>
-              <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
-            </span></div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-  <!-- our values -->
-  <div class="values" data-aos="zoom-in-up">
-    <h2>Our Values</h2>
-    <div class="value-item" data-aos="fade-right">
-      <i class="fas fa-handshake"></i>
-      <div>
-        <h3>Integrity</h3>
-        <p>We conduct our business with the highest ethical standards, ensuring honesty and fairness in every transaction.</p>
-      </div>
-    </div>
-    <div class="value-item" data-aos="fade-left">
-      <i class="fas fa-users"></i>
-      <div>
-        <h3>Customer Focus</h3>
-        <p>Our clients are at the heart of everything we do. We listen to your needs and work tirelessly to meet them.</p>
-      </div>
-    </div>
-    <div class="value-item" data-aos="fade-right">
-      <i class="fas fa-lightbulb"></i>
-      <div>
-        <h3>Innovation</h3>
-        <p>We leverage the latest technology and market insights to provide you with the best possible service.</p>
-      </div>
-    </div>
-    <div class="value-item" data-aos="fade-left">
-      <i class="fas fa-building"></i>
-      <div>
-        <h3>Community</h3>
-        <p>We are proud to be part of the real estate community and are committed to giving back through various initiatives and partnerships.</p>
-      </div>
-    </div>
-    <div class="value-item" data-aos="fade-right">
-      <i class="fas fa-bullhorn"></i>
-      <div>
-        <h3>Transparency</h3>
-        <p>We believe in open and honest communication with our clients.</p>
-      </div>
-    </div>
-    <div class="value-item" data-aos="fade-left">
-      <i class="fas fa-award"></i>
-      <div>
-        <h3>Excellence</h3>
-        <p>We are committed to delivering top-notch services and achieving outstanding results.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Client Testimonials Section -->
-
-  <div class="testimonial" data-aos="zoom-out-right">
-    <div class="testimonial_head d-flex flex-column align-items-center mb-4">
-      <h2 class="text-center">Client Testimonials</h2>
-      <div class="line"></div>
-    </div>
-    <div class="testimonial-section mt-4" >
-      <div class="testimonial-item" data-aos="zoom-in-down">
-        <p>"Reydon Resources helped me find my dream home. Their team was professional, attentive, and made the process
-          seamless."</p>
-        <img src="./IMG/male.webp" alt="">
-        <h4 class="mt-3">John Doe</h4>
-      </div>
-      <div class="testimonial-item" data-aos="zoom-in-down">
-        <p>"Exceptional service and a dedicated team. I highly recommend Reydon Resources for all your real estate
-          needs."</p>
-        <img src="./IMG/male.webp" alt="">
-        <h4 class="mt-3">Jane Smith</h4>
-      </div>
-      <div class="testimonial-item" data-aos="zoom-in-down">
-        <p>"Their property management services are top-notch. My investment properties are well-maintained and
-          profitable."</p>
-        <img src="./IMG/male.webp" alt="">
-        <h4 class="mt-3">Michael Johnson</h4>
-      </div>
-    </div>
-  </div>
 
 
-  <!-- why choose us-->
-  <section class="why-choose-us " data-aos="fade-down">
-   <div class="why-head d-flex flex-column align-items-center">
-    <h2>Why Choose Us</h2>
-    <div class="line1 mb-4 "></div>
-   </div>
-    <div class="reasons">
-      <div class="reason" data-aos="fade-down-right">
-        <h3>Personalized Service</h3>
-        <img src="./IMG/icon/icon1.png" alt="" width="80px">
-        <p>We tailor our services to meet your unique needs and preferences. </p>
+    <!-- about us -->
+    <div class="aboutus mt-5 ">
+
+      <div class="parallex ">
+        <div class="about-content" data-aos="fade-right">
+          <div class="about-head">
+            <h2 class="">About us</h2>
+            <div class="line mb-4"></div>
+          </div>
+          <p>Welcome to <strong>"Reydon Resources Private Limited"</strong>, where your Real-estate dreams become
+            reality. we are your trusted partner in real estate and allied trading & services. With years of experience
+            and a deep understanding of the market, we are dedicated to helping you navigate the complexities of buying,
+            selling, and managing properties.
+        </div>
       </div>
-      <div class="reason" data-aos="fade-down">
-        <h3>Market <br> Expertise</h3>
-        <img src="./IMG/icon/icon2.png" alt="" width="80px">
-        <p>With in-depth knowledge of the local market, we provide valuable insights and advice. </p>
-     
+    </div>
+    <!-- services -->
+    <div class="services mt-5" data-aos="fade-down-right">
+      <h2 class="text-center">What We Do</h2>
+      <div class="line2 text-center mb-4"></div>
+      <p>We offer a comprehensive range of real estate services, including:</p>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Residential Sales and
+            Rentals:</strong> Helping you buy, sell, or rent homes that match your lifestyle
+          and budget.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Commercial Real Estate:</strong>
+          Assisting businesses in finding the perfect location to thrive.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Property Management:</strong>
+          Providing top-notch management services to ensure your investment
+          properties are well-maintained and profitable. We handle all aspects of property management to maximize your
+          investment.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Trading and Services:</strong>
+          Providing all kinds of trading and services for extended quality of
+          unique products that directly and indirectly support real estate and property management services.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><strong>Investment
+            Opportunities:</strong> Guiding investors to make informed decisions and maximize their
+          returns.</li>
+      </ul>
+    </div>
+    <!-- Projects -->
+    <div class="projects mt-5 mb-3" data-aos="flip-down">
+      <div class="project_head d-flex flex-column align-items-center mb-4">
+        <h2 class="text-center">Our Projects</h2>
+        <div class="line text-center"></div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper mt-3">
+          <div class="swiper-slide">
+            <div class="cards">
+              <div class="front"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+              <div class="back"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards">
+              <div class="front"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+              <div class="back"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards">
+              <div class="front"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+              <div class="back"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards">
+              <div class="front"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+              <div class="back"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards">
+              <div class="front"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+              <div class="back"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards">
+              <div class="front"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+              <div class="back"><span>
+                  <img src="https://via.placeholder.com/300x200?text=Villa+Plot+6" alt="Villa Plot 6">
+                  <h2>Investment Villa Plot</h2>
+                  <p>An excellent investment opportunity, this villa plot is located in a rapidly developing area.</p>
+                </span></div>
+            </div>
+          </div>
+
         </div>
-      <div class="reason" data-aos="fade-down-left">
-        <h3>Comprehensive Support </h3>
-        <img src="./IMG/icon/icon4.png" alt="" width="80px">
-        <p>From the initial consultation to closing the deal, we are with you every step of the way. </p> 
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <!-- our values -->
+    <div class="values" data-aos="zoom-in-up">
+      <h2>Our Values</h2>
+      <div class="value-item" data-aos="fade-right">
+        <i class="fas fa-handshake"></i>
+        <div>
+          <h3>Integrity</h3>
+          <p>We conduct our business with the highest ethical standards, ensuring honesty and fairness in every
+            transaction.</p>
         </div>
-      <!-- <div class="reason">
+      </div>
+      <div class="value-item" data-aos="fade-left">
+        <i class="fas fa-users"></i>
+        <div>
+          <h3>Customer Focus</h3>
+          <p>Our clients are at the heart of everything we do. We listen to your needs and work tirelessly to meet them.
+          </p>
+        </div>
+      </div>
+      <div class="value-item" data-aos="fade-right">
+        <i class="fas fa-lightbulb"></i>
+        <div>
+          <h3>Innovation</h3>
+          <p>We leverage the latest technology and market insights to provide you with the best possible service.</p>
+        </div>
+      </div>
+      <div class="value-item" data-aos="fade-left">
+        <i class="fas fa-building"></i>
+        <div>
+          <h3>Community</h3>
+          <p>We are proud to be part of the real estate community and are committed to giving back through various
+            initiatives and partnerships.</p>
+        </div>
+      </div>
+      <div class="value-item" data-aos="fade-right">
+        <i class="fas fa-bullhorn"></i>
+        <div>
+          <h3>Transparency</h3>
+          <p>We believe in open and honest communication with our clients.</p>
+        </div>
+      </div>
+      <div class="value-item" data-aos="fade-left">
+        <i class="fas fa-award"></i>
+        <div>
+          <h3>Excellence</h3>
+          <p>We are committed to delivering top-notch services and achieving outstanding results.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Client Testimonials Section -->
+
+    <div class="testimonial" data-aos="zoom-out-right">
+      <div class="testimonial_head d-flex flex-column align-items-center mb-4">
+        <h2 class="text-center">Client Testimonials</h2>
+        <div class="line"></div>
+      </div>
+      <div class="testimonial-section mt-4">
+        <div class="testimonial-item" data-aos="zoom-in-down">
+          <p>"Reydon Resources helped me find my dream home. Their team was professional, attentive, and made the
+            process
+            seamless."</p>
+          <img src="./IMG/male.webp" alt="">
+          <h4 class="mt-3">John Doe</h4>
+        </div>
+        <div class="testimonial-item" data-aos="zoom-in-down">
+          <p>"Exceptional service and a dedicated team. I highly recommend Reydon Resources for all your real estate
+            needs."</p>
+          <img src="./IMG/male.webp" alt="">
+          <h4 class="mt-3">Jane Smith</h4>
+        </div>
+        <div class="testimonial-item" data-aos="zoom-in-down">
+          <p>"Their property management services are top-notch. My investment properties are well-maintained and
+            profitable."</p>
+          <img src="./IMG/male.webp" alt="">
+          <h4 class="mt-3">Michael Johnson</h4>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- why choose us-->
+    <section class="why-choose-us " data-aos="fade-down">
+      <div class="why-head d-flex flex-column align-items-center">
+        <h2>Why Choose Us</h2>
+        <div class="line1 mb-4 "></div>
+      </div>
+      <div class="reasons">
+        <div class="reason" data-aos="fade-down-right">
+          <h3>Personalized Service</h3>
+          <img src="./IMG/icon/icon1.png" alt="" width="80px">
+          <p>We tailor our services to meet your unique needs and preferences. </p>
+        </div>
+        <div class="reason" data-aos="fade-down">
+          <h3>Market <br> Expertise</h3>
+          <img src="./IMG/icon/icon2.png" alt="" width="80px">
+          <p>With in-depth knowledge of the local market, we provide valuable insights and advice. </p>
+
+        </div>
+        <div class="reason" data-aos="fade-down-left">
+          <h3>Comprehensive Support </h3>
+          <img src="./IMG/icon/icon4.png" alt="" width="80px">
+          <p>From the initial consultation to closing the deal, we are with you every step of the way. </p>
+        </div>
+        <!-- <div class="reason">
         <h3>Integrity and Transparency</h3>
         <img src="./IMG/icon/icon5.png" alt="" width="80px">
         <p>We conduct our business with the highest ethical standards, ensuring honesty and fairness in every
@@ -428,13 +470,13 @@
           allows us to meet all your real estate needs.</p>
       </div>
     </div> -->
-  </section>
+    </section>
 
-<div class="footercontent">
+    <div class="footercontent">
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 
 

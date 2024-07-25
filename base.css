@@ -431,7 +431,7 @@ font-size: 1.3rem;
     display: none;
     cursor: pointer;
   }
-  .submenu1 .social-icons2{
+  .social-icons2{
     display: none;
   }
   @media screen and (max-width:480px) {
@@ -445,10 +445,11 @@ font-size: 1.3rem;
         background: #4CAF50;
        display: none;
        border-radius: 3px;
-       overflow: hidden;
+       overflow-y:scroll ;
        max-height: 0;
        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
        opacity: 0;
+       max-height: 200px;
     }
     nav ul.show {
         max-height: 500px;
@@ -490,29 +491,13 @@ font-size: 1.3rem;
      }
     
      .submenu1{
-        position: static;
-        background: none;
-        transform: translate(-8.7%,-43px);
-        opacity: 1;
-       
-
-     }
-     .submenu1 a{
-        color: white !important;
-     }
-     .submenu1 a::before{
-        content: none;
-     }
-     #more{
-        display: none;
-     }
-     .submenu1 .social-icons2{
-        display: block;
-        transform: translateY(10px);
-     }
-     nav ul li:hover .submenu1{
-        transform: translate(-8.7%,-43px);
+        z-index: 99;
+        position: absolute;
+    
      }
 
+        .social-icons2{
+            display: block;
+            transform: translateY(10px);}
 
   }
