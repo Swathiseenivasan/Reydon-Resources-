@@ -106,7 +106,7 @@ padding: 5px;
 color: #003366 !important;
 position: relative;
 }
-.submenu1 a:before{
+.submenu1 a::before{
 content: '';
 position: absolute;
 left: 50%;
@@ -115,7 +115,6 @@ bottom: 4%;
 width: 0;
 height: 1.4px;
 background: var(--primary-color);
-
 transition: 0.8s;
 }
 .submenu1 a:hover::before{
@@ -427,4 +426,93 @@ font-size: 1.3rem;
   
   .footer-newsletter button:hover {
       background-color: #45a049;
+  }
+  .menuiconc{
+    display: none;
+    cursor: pointer;
+  }
+  .submenu1 .social-icons2{
+    display: none;
+  }
+  @media screen and (max-width:480px) {
+    header{
+        overflow: hidden;
+        position: absolute;
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        background: #4CAF50;
+       display: none;
+       border-radius: 3px;
+       overflow: hidden;
+       max-height: 0;
+       transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+       opacity: 0;
+    }
+    nav ul.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+    nav ul li::before{
+        content: none;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .enquiry{
+        display: none;
+    }
+    .innerheadsec{
+        font-size: 2rem !important;
+    }
+    .head{
+        display: block;
+        text-align: center;
+    }
+    .social-icons{
+        display: none;
+    }
+    .menuiconc{
+        display: block;
+        position: absolute;
+        z-index: 999;
+        left: 0px;
+        top: 0px;
+        background: var(--hover-color);
+        padding: 0px 10px;
+      }
+     .carousel-control-prev{
+        transform: translateX(-15px);
+     }
+     .carousel-control-next{
+        transform: translateX(15px);
+     }
+    
+     .submenu1{
+        position: static;
+        background: none;
+        transform: translate(-8.7%,-43px);
+        opacity: 1;
+       
+
+     }
+     .submenu1 a{
+        color: white !important;
+     }
+     .submenu1 a::before{
+        content: none;
+     }
+     #more{
+        display: none;
+     }
+     .submenu1 .social-icons2{
+        display: block;
+        transform: translateY(10px);
+     }
+     nav ul li:hover .submenu1{
+        transform: translate(-8.7%,-43px);
+     }
+
+
   }
