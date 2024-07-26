@@ -318,11 +318,14 @@ filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.9));
 font-size: 1.3rem;
 }
 .site-footer {
-    background-color: #F5F5DC;
+    background-color: #00b7ff7f;
     padding: 20px 0px;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8rem !important;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+
   }
   
   .site-footer .site-cotainer {
