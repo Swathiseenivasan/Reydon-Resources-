@@ -322,6 +322,7 @@ font-size: 1.3rem;
     padding: 20px 0px;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem !important;
   }
   
   .site-footer .site-cotainer {
@@ -330,7 +331,7 @@ font-size: 1.3rem;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: 1100px;
   }
   .footer-company-info,
@@ -359,9 +360,25 @@ font-size: 1.3rem;
       font-family: 'Playfair Display', serif;
       color: #2C6E49;
       margin-bottom: 15px;
-      border-bottom: 2px solid #2C6E49;
-      padding-bottom: 5px;
+
+  
   }
+  .footer-company-info h2::after,
+.footer-legal h3::after,
+.footer-quick-links h3::after,
+.footer-contact-info h3::after,
+.footer-newsletter h3::after,
+.footer-business-hours h3::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #2C6E49;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+    left: 0;
+    margin-top: 5px;
+}
   
   .footer-company-info p {
       text-align: justify;
@@ -404,7 +421,7 @@ font-size: 1.3rem;
       text-decoration: none;
       color: #333333;
       transition: color 0.3s;
-      font-size: 1.5em;
+      font-size: 1.2em;
   }
   
   .footer-social-media a:hover {
@@ -455,6 +472,14 @@ font-size: 1.3rem;
   }
   ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
+  }
+  
+  .footer-legal ul li{
+    display: inline-block;
+    border: 1px solid #2C6E49;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
   }
   @media screen and (max-width:480px) {
     header{
