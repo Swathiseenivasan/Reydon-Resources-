@@ -1,0 +1,75 @@
+@import url(./base.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ 
+.maincontactus{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 10px;
+
+}
+.headsectioncon h2::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #2C6E49;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.contact-info, .contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+   
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #2c6e49;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4caf50;
+}
+
+@media screen and (max-width:786px) {
+    .maincontactus{
+        flex-direction: column;
+    
+    }
+}
