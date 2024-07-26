@@ -28,7 +28,7 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-background: url('./IMG/bg.jpg') no-repeat center/cover;
+background: url('./IMG/about.webp') no-repeat center/cover;
 box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 
 background-attachment: fixed;
@@ -64,7 +64,21 @@ z-index: -1;
     font-weight: 500;
 }
 .project_head h2{
+    font-family: 'Playfair Display', serif;
     color: #2C6E49;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.project_head h2::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #2C6E49;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 .cards{
     position: relative;
@@ -148,6 +162,21 @@ z-index: -1;
 }
 .testimonial_head h2{
     color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    color: #2C6E49;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.testimonial_head h2::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #2C6E49;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 .services{
     width: 100%;
@@ -165,16 +194,17 @@ z-index: -1;
 font-size: 1.5rem;
 }
 .services ul li{
-    padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     color: #424242;
-    list-style-image:("")
+    padding: 10px;
+}
+.services ul li span{
+    padding: 10px;
 }
 
 .services ul li strong{
     color: var(--primary-color);
-    
     font-size: 1.2rem;
 }
 .values {
@@ -272,9 +302,21 @@ font-size: 1.5rem;
   }
   
   .why-choose-us h2 {
-    color: #2C6E49;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 30px;
+    color: #2C6E49;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .why-choose-us h2::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #2C6E49;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
   }
   
   .reasons {
