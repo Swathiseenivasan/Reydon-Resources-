@@ -38,6 +38,9 @@ filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.4));
 color: #2C6E49;
 position: relative;
 }
+.head img:nth-child(2){
+    padding: 4px;
+}
 .headlogo{
     border-radius: 5px;
 }
@@ -60,6 +63,7 @@ list-style: none;
 nav ul li{
 padding: 10px;
 position: relative;
+cursor: pointer;
 
 }
 nav ul li::before{
@@ -78,6 +82,7 @@ bottom: 2%;
 left: 0%;
 width: 100%;
 right: 0%;
+
 
 }
 nav ul li a{
@@ -106,6 +111,7 @@ transform: translateY(10%);
 }
 nav ul li:hover .submenu2{
     transform: translateX(-55px);
+    margin-top: 10px;
 }
 .submenu1 a span{
 position: relative;
@@ -155,6 +161,13 @@ background: var(--hover-color);
 transition: 0.4s;
 
 }
+.font-reydon {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -4px;
+    line-height: 1.2;
+}
 .in-con-btn button:hover{
 border-top:3px solid var(--primary-color) ;
 border-bottom:3px solid var(--primary-color) ;
@@ -182,10 +195,11 @@ justify-content: center;
 padding: 8px 12px;
 border: 1px solid black;
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
-background: var(--hover-color);
+background: rgba(208, 208, 0, 0.894);
 position: relative;
 overflow: hidden;
 border-radius: 3px;
+box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
 
 }
 .social-icons{
@@ -194,12 +208,24 @@ left: 0;
 top: 50%;
 display: flex;
 flex-direction: column;
-background: var(--hover-color);
+background: rgb(227, 227, 0);
 padding: 10px;
 z-index: 100;
 align-items: center;
 justify-content: center;
+border-radius: 3px;
+border: 1px solid black;
+box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.4);
 
+}
+.contact_main{
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+}
+#contactusbtn::before{
+content: none;
 }
 .social-icons a:nth-child(1){
 color: rgb(204, 0, 136);
@@ -318,13 +344,14 @@ filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.9));
 font-size: 1.3rem;
 }
 .site-footer {
-    background-color: #00b7ff7f;
+    background-color: #0078a0;
     padding: 20px 0px;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8rem !important;
     border-top: 2px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
+    box-shadow: inset 5px 5px 7px 2px rgba(255, 255, 255, 0.2);
 
   }
   
@@ -361,8 +388,9 @@ font-size: 1.3rem;
   .footer-newsletter h3,
   .footer-business-hours h3 {
       font-family: 'Playfair Display', serif;
-      color: #2C6E49;
+      color: #d9ff00;
       margin-bottom: 15px;
+     
 
   
   }
@@ -375,7 +403,7 @@ font-size: 1.3rem;
     content: "";
     width: 100px;
     height: 3px;
-    background-color: #2C6E49;
+    background-color: #00c053;
     display: block;
     position: relative;
     border-radius: 2px;
@@ -387,6 +415,7 @@ font-size: 1.3rem;
       text-align: justify;
       width: 90%;
       line-height: 1.6;
+      color: white !important;
   }
   
   .footer-quick-links ul,
@@ -394,6 +423,7 @@ font-size: 1.3rem;
       list-style: none;
       padding: 0;
       margin: 0;
+      
   }
   
   .footer-quick-links ul li,
@@ -404,7 +434,7 @@ font-size: 1.3rem;
   .footer-quick-links ul li a,
   .footer-legal ul li a {
       text-decoration: none;
-      color: #333333;
+      color: white !important;
       transition: color 0.3s;
       display: flex;
       align-items: center;
@@ -460,6 +490,9 @@ font-size: 1.3rem;
   .footer-newsletter button:hover {
       background-color: #45a049;
   }
+  .footer-contact-info p{
+    color: white !important;
+  }
   .menuiconc{
     display: none;
     cursor: pointer;
@@ -478,11 +511,17 @@ font-size: 1.3rem;
   }
   
   .footer-legal ul li{
+   
     display: inline-block;
-    border: 1px solid #2C6E49;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50%;
+   
+  }
+  .footer-legal ul li a{
+   background: white;
+   
+   border: 1px solid #2C6E49;
+   font-size: 20px;
+   padding: 10px;
+   border-radius: 50%;
   }
   @media screen and (max-width:480px) {
     header{
@@ -524,6 +563,13 @@ font-size: 1.3rem;
         display: block;
         text-align: center;
     }
+    .head img:nth-child(2){
+        width: 150px !important;
+    }
+    .head img:nth-child(1){
+        width: 50px !important;
+
+    }
     .social-icons{
         display: none;
     }
@@ -552,6 +598,13 @@ font-size: 1.3rem;
         .social-icons2{
             display: block;
             transform: translateY(10px);}
+            .social-icons2 a{
+                background: white;
+                border: 1px solid #2C6E49;
+                font-size: 20px;
+                padding: 5px;
+                border-radius: 50%;
+            }
             .head h2{
               font-size: 1.5rem;
             }
