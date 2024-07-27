@@ -28,8 +28,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
+    border: 1px solid var(--primary-color);
    
 }
+
 
 .contact-info h2, .contact-form h2 {
     margin-top: 0;
@@ -42,6 +44,7 @@
 
 .contact-info ul li {
     margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 
 .contact-form label {
