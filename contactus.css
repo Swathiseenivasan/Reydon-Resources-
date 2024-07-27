@@ -10,6 +10,9 @@
     gap: 10px;
 
 }
+.second-section{
+    background: #f2f2f2;
+}
 .headsectioncon h2::after{
     content: "";
     width: 80px;
@@ -70,6 +73,8 @@
 @media screen and (max-width:786px) {
     .maincontactus{
         flex-direction: column;
-    
+    }
+    .second-sech2{
+        margin-top: 60px;
     }
 }
