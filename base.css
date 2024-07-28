@@ -113,6 +113,15 @@ nav ul li:hover .submenu2{
     transform: translateX(-55px);
     margin-top: 10px;
 }
+.innersubmenu{
+    transform: translateX(300px);
+    margin-top: 20px;
+}
+nav ul li:hover .innersubmenu{
+    transform: translateX(300px);
+    margin-top: 20px;
+    
+}
 .submenu1 a span{
 position: relative;
 z-index: 1;
@@ -226,6 +235,12 @@ box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.4);
 }
 #contactusbtn::before{
 content: none;
+}
+#line_sub{
+    height: 1.1px;
+    background: #003366;
+    width: 100%;
+    padding: 1px;
 }
 .social-icons a:nth-child(1){
 color: rgb(204, 0, 136);
