@@ -1,0 +1,86 @@
+@import url(./base.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #2C6E49;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #2C6E49;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+
+.mt-4 {
+    margin-top: 1.5em;
+}
+
+/* Content styles */
+.content p {
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+.content a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Effective Date */
+p.text-center {
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #2C6E49;
+}
+
+p.text-center strong {
+    color: #2C6E49;
+}
+
+/* Link styles */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+}

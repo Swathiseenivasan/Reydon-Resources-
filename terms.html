@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer</title>
+  <link rel="stylesheet" href="./terms.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded",()=>{
+        fetch("./footer.html").then(response=>{
+            if(!response.ok){
+                throw new Error("not fetched")
+            }
+            return response.text();
+          }).then(html=>{
+            document.querySelector(".footercontent").innerHTML=html
+          })
+          .catch(err=>{
+            console.log(err)
+          })
+         });
+
+         document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.querySelector(".menuiconc");
+            const navMenu = document.querySelector("nav ul");
+            menuButton.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });
+        });
+  </script>
+</head>
+<body>
+<div class="main">
+    
+        <!-- navbar section -->
+        <div class="basesection">
+            <!-- navbar section -->
+            <header>
+                <div class="head">
+                  <img src="./IMG/logo.png" alt="" width="50px" class="headlogo">
+                 <img src="./IMG/mainlogo.jpg" alt="" width="185px">
+                </div>
+                <nav class="mt-2">
+                  <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a><span>Projects</span> <span id="arrowicon"><i class="fa-solid fa-caret-down"></i></span></a>
+                      <div class="submenu1" style="width: 230px;">
+                        <a href=""><span>&#x25B6; </span>Residential Plots
+                          <a href=""><span>&#x25B6; </span>Residential Buildings</a>
+                          <a href=""><span>&#x25B6; </span>Commercial Plots</a>
+                          <a href=""><span>&#x25B6; </span>Commercial Buildings</a>
+                        </a>
+                      </div>
+                    </li>
+                    <li><a>Products & Services<span id="arrowicon"><i class="fa-solid fa-caret-down"></i></span></a>
+                      <div class="submenu1">
+                        <div class="innersubmenu">
+                          <ol>
+                            <li><a ><span>&#x25B6; </span>Products</a>
+                              <div class="inner-nav-sub">
+                                <a href=""><span>&#x25B6; </span>Lithium-ion Inverter 1 Kwa -5Kwa</a>
+                                <a href=""><span>&#x25B6; </span>Solar Systems</a>
+                                <a href=""><span>&#x25B6; </span>Charging Unit</a>
+                                <a href=""><span>&#x25B6; </span>Reydon-Interior Design</a>
+                                <a href=""><span>&#x25B6; </span>Reydon-Furnitures</a>
+                                <a href=""><span>&#x25B6; </span>Reydon-Designs</a>
+                                <a href=""><span>&#x25B6; </span>Installation & Service Call</a>
+                              </div></li>
+                            <li>
+                              <a ><span>&#x25B6; </span>Services</a>
+                              <div class="inner-nav-sub">
+                                <a href=""><span>&#x25B6; </span>Property Management Services</a>
+                            <a href=""><span>&#x25B6; </span>Services Enquiry</a> 
+                              </div>
+                            </li>
+                          </ol>
+                          
+                        </div>
+                
+                          
+                         
+                      </div>
+                    </li>
+                    <li><a id="more">Gallery & Events <span id="arrowicon"><i class="fa-solid fa-caret-down"></i></span></a>
+                      <div class="submenu1">
+                        <a href=""><span>&#x25B6; </span>News / Events</a>
+                        <a href=""><span>&#x25B6; </span>Photo Gallery</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a id="more">More <span id="arrowicon"><i class="fa-solid fa-caret-down"></i></span></a>
+                      <div class="submenu1 submenu2">
+                        <a href=""><span>&#x25B6; </span><span>Career</span></a>
+                        <a href=""><span>&#x25B6; </span><span>Channel Partner</span></a>
+                      </div>
+                    </li>
+                    <li id="contactusbtn" ><a href="./contactus.html" class="contact_main">Contact Us</a></li>
+                    <li>
+                      <div class="social-icons2">
+                        <a style="color: rgb(255, 109, 133) !important; " href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a style="color: rgb(255, 5, 47) !important; " href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a style="color: rgb(0, 0, 0) !important; " href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a style="color: rgb(0, 45, 182) !important; " href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+            <div class="enquiry" style="display: none;">
+              <button>
+                <span class="button-text"><i class="fa-solid fa-phone"></i> For Sales Enquiry</span>
+                <span class="phone-number"><i class="fa-solid fa-phone"></i>+91 7708943894</span>
+              </button>
+            </div>
+            <!-- social media -->
+            <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank"><img src="./IMG/icon/instaicon.png" alt="" width="18px"></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="./IMG/icon/youtubeicon.png" alt="" width="18px"></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+      
+            <div class="menuiconc">
+              <h2 class="menuiconc"><i class="fa fa-bars"></i></h2>
+            </div> 
+</header>
+</div>
+<div class="d-flex justify-content-center pt-3">
+    <img src="./IMG/aboutustitle.jpg" alt="">
+</div>
+<div class="container">
+    <div class="tos-content">
+        <h1 class="text-center mt-4">Terms of Service Agreement</h1>
+        <p class="text-center"><strong>Effective Date: 15th July 2024</strong></p>
+        <div class="content">
+            <h2>1. Introduction</h2>
+            <p>Welcome to Reydon Resources Private Limited! By accessing and using our website, you agree to comply with the following terms and conditions.</p>
+            <p>Please read this agreement carefully before using our services.</p>
+
+            <h2>2. Acceptance of Terms</h2>
+            <p>By using our website, you acknowledge that you have read, understood, and accepted these terms.</p>
+            <p>If you do not agree with any part of these terms, please refrain from using our services.</p>
+
+            <h2>3. Use of Website</h2>
+            <p>You may use our website for informational purposes, subject to these terms.</p>
+            <p>Unauthorized use or modification of content is strictly prohibited.</p>
+            <p>We reserve all rights to remove or edit unauthorized contents post by visitors such as illegal, defamatory, threatening, infringing of intellectual property rights, software viruses, political campaigns, and commercial solicitation, invasive of privacy, or injurious in any other way to third parties.</p>
+
+            <h2>4. Intellectual Property</h2>
+            <p>All original content, trademarks, and intellectual property on our website belong to Reydon Resources Private Limited.</p>
+            <p>You may not reproduce, distribute, or use our content without our permission.</p>
+
+            <h2>5. Disclaimer</h2>
+            <p>While we strive for accuracy, information on our website may change over time.</p>
+            <p>Reydon Resources Private Limited is not liable for any errors or omissions.</p>
+
+            <h2>6. Privacy Policy</h2>
+            <p>Our privacy practices are outlined in our separate Privacy Policy.</p>
+            <p>By using our website, you consent to our data practices.</p>
+
+            <h2>7. Governing Law</h2>
+            <p>These terms are governed by the laws of Tamil Nadu, India.</p>
+            <p>Any disputes will be subject to the exclusive jurisdiction of the courts in Tamil Nadu.</p>
+
+            <h2>8. Contact Us</h2>
+            <p>For any inquiries or concerns, please contact us at <a href="mailto:reydonrpl@gmail.com">reydonrpl@gmail.com</a>.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="footercontent"></div>
+</body>
+</html>

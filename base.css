@@ -113,15 +113,39 @@ nav ul li:hover .submenu2{
     transform: translateX(-55px);
     margin-top: 10px;
 }
-.innersubmenu{
-    transform: translateX(300px);
-    margin-top: 20px;
+.inner-nav-sub{
+    display: flex;
+position: absolute;
+justify-content: center;
+flex-direction: column;
+background: #ffffff;
+opacity: 0;
+width: 200px;
+padding: 10px;
+border-radius: 4px;
+transition: opacity 0.3s ease, transform 0.3s ease;
+pointer-events: none;
+z-index: 99;
+transform: translateX(105px);
+margin-top: -30px;
 }
-nav ul li:hover .innersubmenu{
-    transform: translateX(300px);
-    margin-top: 20px;
-    
+
+.innersubmenu ol li:hover .inner-nav-sub{
+    pointer-events: auto;
+opacity: 1.4;
+transform: translateX(100px);
 }
+.innersubmenu ol li{
+   padding: 7px;
+   position: relative;
+cursor: pointer;
+list-style: none;
+transform: translateX(-30px);
+}
+.innersubmenu ol li::before{
+    content: none;
+}
+
 .submenu1 a span{
 position: relative;
 z-index: 1;

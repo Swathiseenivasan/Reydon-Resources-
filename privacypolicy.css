@@ -1,0 +1,58 @@
+@import url(./base.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.policy-content h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2C6E49; /* Emerald Green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.policy-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2C6E49;
+    margin-top: 20px;
+   
+}
+
+
+.policy-content p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #003366; 
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+.linepolicy{
+    width: 75px;
+    height: 2px;
+    background: #003366;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 20px;
+    }
+}
