@@ -32,12 +32,7 @@ overflow: hidden ;
     font-size: 13px;
 }
 /* navbar */
-.head h2{
-font-size: 2rem;
-filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.4));
-color: #2C6E49;
-position: relative;
-}
+
 .head img:nth-child(2){
     padding: 4px;
 }
@@ -45,16 +40,19 @@ position: relative;
     border-radius: 5px;
 }
 
-header{
-display: flex;
-width: 100%;
-justify-content: space-between;
-padding: 0px 10px;
-z-index: 99;
-background: white;
-
-}
-
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 10px;
+    z-index: 999;
+    background: white;
+    position: sticky !important;
+    top: 0;
+ 
+   
+  }
+ 
 nav ul{
 display: flex;
 flex-direction: row;
@@ -194,13 +192,7 @@ background: var(--hover-color);
 transition: 0.4s;
 
 }
-.font-reydon {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 64px;
-    letter-spacing: -4px;
-    line-height: 1.2;
-}
+
 .in-con-btn button:hover{
 border-top:3px solid var(--primary-color) ;
 border-bottom:3px solid var(--primary-color) ;
@@ -216,9 +208,9 @@ z-index: 1;
 }
 .enquiry{
 position: absolute;
-right: 20px;
-bottom: 20px;
+right: 0;
 z-index: 99;
+
 
 }
 .enquiry button{

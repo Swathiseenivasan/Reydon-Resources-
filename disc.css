@@ -6,6 +6,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 20px;
   }
   
   .policy-content {
@@ -14,7 +15,8 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    
+    
   }
   
   .policy-content h1 {
@@ -23,6 +25,8 @@
     color: #2C6E49;
     margin-bottom: 20px;
     text-align: center;
+    margin-top: -25px !important;
+   
   }
   
   .policy-content p {
