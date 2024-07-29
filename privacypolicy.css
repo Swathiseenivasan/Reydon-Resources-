@@ -17,12 +17,14 @@
     color: #2C6E49; /* Emerald Green */
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 .policy-content h3 {
     font-family: 'Playfair Display', serif;
     color: #2C6E49;
     margin-top: 20px;
+    font-size: 1.4em;
    
 }
 

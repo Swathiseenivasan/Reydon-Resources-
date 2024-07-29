@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.container {
+.container2 {
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -16,16 +16,16 @@
     text-align: center;
 }
 
-h1 {
+.container2 h1 {
     font-family: 'Playfair Display', serif;
     color: #2C6E49;
-    font-size: 2.5em;
+    font-size: 2rem;
     margin-bottom: 0.5em;
 }
 
-h2 {
+.container2 h2 {
     color: #2C6E49;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-top: 1.5em;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .container2 {
         width: 95%;
         padding: 10px;
     }
