@@ -84,8 +84,8 @@ right: 0%;
 
 }
 nav ul li a{
-font-size: 1rem;
-color: #2C6E49 !important;
+font-size: 1.07rem;
+color: #000000 !important;
 }
 .submenu1{
 display: flex;
@@ -150,7 +150,7 @@ z-index: 1;
 }
 .submenu1 a{
 padding: 5px;
-color: #003366 !important;
+color: #000b15 !important;
 position: relative;
 }
 .submenu1 a::before{
