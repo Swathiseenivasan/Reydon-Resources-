@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <link rel="stylesheet" href="./visionmission.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("./footer.html").then(response => {
+                if (!response.ok) {
+                    throw new Error("not fetched")
+                }
+                return response.text();
+            }).then(html => {
+                document.querySelector(".footercontent").innerHTML = html
+            })
+                .catch(err => {
+                    console.log(err)
+                })
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("./navbar.html").then(response => {
+                if (!response.ok) {
+                    throw new Error("not fetech")
+                }
+                return response.text();
+            }).then(html => {
+
+                document.querySelector("header").innerHTML = html
+                const menubutton = document.querySelector('.menuiconc')
+                const navmenu = document.querySelector('nav ul')
+                if (menubutton && navmenu) {
+                    menubutton.addEventListener('click', () => {
+                        navmenu.classList.toggle('show')
+                    })
+                }
+                else {
+                    console.log("not found navbar and menubtn")
+                }
+            })
+                .catch(err => {
+                    console.log(err)
+                })
+        })
+    </script>
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <header>
+
+    </header>
+
+    <h2 style="font-size:clamp(1rem,10vw,38px);padding:30px; font-family: 'Cinzel Decorative', serif;" class="text-center">Reydon Resources Private Limited</h2>
+
+    <!-- mainsection -->
+     <div class="main-container">
+        <div class="container-head">
+            <h2 class="text-center">Vision & Mission</h2>
+            <div class="line"></div>
+        </div>
+          <div class="container1">
+             
+            <img src="./img2/VISION.png" alt="" width="480px">
+            <img src="./img2/MISSION.png" alt="" width="480px">
+
+          </div>
+
+        <div class="container-head">
+            <h2 class="text-center">Quality Policy</h2>
+            <div class="line"></div>
+        </div>
+          <div class="container1">
+             
+            <img src="./img2/QUALITY POLICY.png" alt="" width="480px">
+            <img src="./img2/qualitypolicy2.png" alt="" width="480px">
+
+          </div>
+
+     </div>
+
+
+
+    <!-- footer section -->
+    <div class="footercontent"></div>
+</body>
+
+</html>

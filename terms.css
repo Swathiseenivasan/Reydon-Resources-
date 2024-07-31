@@ -1,7 +1,13 @@
 @import url(./base.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+@font-face {
+    font-family: 'CinzelDecorative';
+    src: url('./CinzelDecorative-Black.ttf') format('ttf'),
+         url('./CinzelDecorative-Black.ttf') format('ttf');
+    font-weight: 900; 
+    font-style: normal;
+  }
 .container2 {
     width: 80%;
     margin: auto;

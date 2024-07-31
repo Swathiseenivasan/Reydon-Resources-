@@ -7,7 +7,12 @@
     --hover-color: #4CAF50;         /* Light Green */
     --border-color: #8B8B8B;        /* Slate Gray */
 }
-
+@font-face {
+    font-family: 'CinzelDecorative';
+    src: url('./CinzelDecorative-Black.ttf') format('ttf');
+    font-weight: 900; 
+    font-style: normal;
+  }
 *{
 font-family: 'Playfair Display', serif;
 box-sizing: border-box;
@@ -207,9 +212,11 @@ position: relative;
 z-index: 1;
 }
 .enquiry{
-position: absolute;
-right: 0;
+position: fixed;
+right: 5px;
+bottom: 10px;
 z-index: 99;
+
 
 
 }
@@ -220,11 +227,11 @@ justify-content: center;
 padding: 8px 12px;
 border: 1px solid black;
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
-background: rgba(208, 208, 0, 0.894);
+background: #00b9f7;
 position: relative;
 overflow: hidden;
 border-radius: 3px;
-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
 
 }
 .social-icons{
@@ -233,15 +240,18 @@ left: 0;
 top: 50%;
 display: flex;
 flex-direction: column;
-background: rgb(227, 227, 0);
+background:  #00b9f7;
 padding: 10px;
 z-index: 100;
 align-items: center;
 justify-content: center;
 border-radius: 3px;
 border: 1px solid black;
-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.4);
 
+
+}
+.facebook{
+    color: blue;
 }
 .contact_main{
     padding: 5px;
@@ -565,8 +575,8 @@ font-size: 1.3rem;
         flex-direction: column;
     }
     nav ul{
-        flex-direction: column;
-        background: #4CAF50;
+    flex-direction: column;
+    background: #4CAF50;
        display: none;
        border-radius: 3px;
        overflow-y:scroll ;
