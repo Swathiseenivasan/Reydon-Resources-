@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service</title>
+  <link rel="stylesheet" href="./lithium.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+
+  <script>
+    document.addEventListener("DOMContentLoaded",()=>{
+        fetch("./footer.html").then(response=>{
+            if(!response.ok){
+                throw new Error("not fetched")
+            }
+            return response.text();
+          }).then(html=>{
+            document.querySelector(".footercontent").innerHTML=html
+          })
+          .catch(err=>{
+            console.log(err)
+          })
+         });
+
+         document.addEventListener("DOMContentLoaded", () => {
+          fetch("./navbar.html").then(response => {
+            if (!response.ok) {
+              throw new Error("not fetech")
+            }
+            return response.text();
+          }).then(html => {
+            
+            document.querySelector("header").innerHTML = html
+            const menubutton=document.querySelector('.menuiconc')
+            const navmenu=document.querySelector('nav ul')
+            if (menubutton && navmenu){
+              menubutton.addEventListener('click',()=>{
+                navmenu.classList.toggle('show')
+              })
+            }
+            else{
+              console.log("not found navbar and menubtn")
+            }
+          })
+            .catch(err => {
+              console.log(err)
+            })
+        })
+  </script>
+</head>
+<body>
+
+<!-- navbar section -->
+<header>
+
+</header>
+
+<!-- mainsection -->
+
+<section class="main-section" >
+    <div class="li-head">
+        <h2 style="font-size:clamp(1rem,10vw,38px);padding:30px; font-family: 'Cinzel Decorative', serif;" class="text-center">Reydon Resources Private Limited</h2>
+    </div>
+ <!-- content -->
+    <div class="inner-li-content ">
+        <div class="li-head">
+            <h2 style="font-size:clamp(1rem,10vw,38px);text-transform:uppercase;" class="text-center">Lithium Battery</h2>
+        </div>
+       
+        <div class="contentsec mt-4">
+           <div class="imgcontent">
+            <img src="./img/battery.jpg" alt="" data-aos="fade-right">
+           </div>
+           <div class="contentsecin" data-aos="fade-left">
+            <h2 class="mb-4" >WHY Lithium Battery</h2>
+            <p>EVs currently account for <span class="highlight">24%</span> of total global lithium demand. This figure is expected to rise to <span class="highlight">79%</span> by 2030.</p>
+            <p>The balance <span class="highlight">21%</span> will come largely from electronics, energy storage, and other gadgets.</p>
+            <p>The International Energy Agency (IEA) estimates that lithium demand could increase by over 40 times by 2030 owing to the growth in EVs, according to the International Lithium Association (ILiA).</p>
+            <p>Last year, lithium demand was about <span class="highlight">320,000 tonnes</span> and is expected to reach <span class="highlight">1 million tonnes</span> by 2025 and <span class="highlight">3 million tonnes</span> by 2030, according to Reuters.</p>
+            <p>Reliance, Mahindra, Ola are among the companies planning to set up lithium battery manufacturing plants in India to meet the increasing lithium battery consumption.</p>    
+           </div>
+        </div>
+    </div>
+    <!-- advantages -->
+     <div class="advantages" data-aos="zoom-in-right">
+        <h1 class="title">Advantages Of Lithium Over Lead Acid Batteries</h1>
+        <div class="grid">
+            <div class="item" data-aos="zoom-out-right">
+                <div class="number">01</div>
+                <i class="fa fa-sync-alt"></i>
+                <p>5x Life Cycle</p>
+            </div>
+            <div class="item" data-aos="zoom-out-down">
+                <div class="number">02</div>
+                <i class="fa fa-bolt"></i>
+                <p>Faster Charging</p>
+            </div>
+            <div class="item" data-aos="zoom-out-right">
+                <div class="number">03</div>
+                <i class="fa fa-battery-full"></i>
+                <p>Higher Capacity</p>
+            </div>
+            <div class="item" data-aos="zoom-out-down">
+                <div class="number">04</div>
+                <i class="fa fa-compress-arrows-alt"></i>
+                <p>Smaller Battery Size</p>
+            </div>
+
+        </div>
+        <div class="grid">
+            <div class="item" data-aos="zoom-out-right">
+                <div class="number">05</div>
+                <i class="fa fa-tools"></i>
+                <p>Zero Maintenance</p>
+            </div>
+            <div class="item" data-aos="zoom-out-down">
+                <div class="number">06</div>
+                <i class="fa fa-tachometer-alt"></i>
+                <p>Better Efficiency</p>
+            </div>
+            <div class="item" data-aos="zoom-out-right">
+                <div class="number">07</div>
+                <i class="fa fa-battery-three-quarters"></i>
+                <p>Higher Depth Of Discharge</p>
+            </div>
+            <div class="item"  data-aos="zoom-out-down">
+                <div class="number">08</div>
+                <i class="fa fa-leaf"></i>
+                <p>Clean Energy Solution</p>
+            </div>
+        </div>
+     </div>
+</section>
+
+<!-- comparision section -->
+<section class="comparison-section">
+    <h2>Li-ion battery <span class="highlight">Vs</span> Lead-acid battery</h2>
+    <div class="comparison-images">
+        <img src="./img/Li-ion.png" alt="Li-ion battery"  data-aos="fade-up-right" >
+        <i class="fas fa-fist-raised comparison-icon" data-aos="fade-down"></i>
+        <img src="./IMG/Lead-acid.png" alt="Lead-acid battery" style="width: 480px;" data-aos="fade-up-left">
+    </div>
+</section>
+
+<!-- comparison -->
+<div class="table">
+    <h1 class="mt-5 mb-4 text-center">Battery Comparison</h1>
+</div>
+<div class="comparison-table mb-5">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th><i class="fa-solid fa-battery-half"></i> Lithium Ion Battery</th>
+                <th><i class="fa-solid fa-battery-full"></i> Lead Acid Battery</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fa-solid fa-wrench"></i> Maintenance</td>
+                <td>Zero Maintenance</td>
+                <td>Need water topping in 3 months</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-bolt"></i> Charging Time</td>
+                <td>Fast charging</td>
+                <td>Charging takes up to 12 hours to complete</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-clock"></i> Life Span</td>
+                <td>More than 10 years</td>
+                <td>3-5 years</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-shield-alt"></i> Safety</td>
+                <td>Safe due to Lithium ion cells</td>
+                <td>Hazardous due to Acid spilling</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-leaf"></i> Environmental Impact</td>
+                <td>No pollution</td>
+                <td>Creates Pollution</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-weight"></i> Weight and Size</td>
+                <td>Compact- All in One Inverter</td>
+                <td>Bulky- Separate set of Inverter, Battery, Rack</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Gallery -->
+ <div class="galleryproducts mb-5">
+    <h2>Gallery</h2>
+    <div class="productsgallery" data-aos="zoom-out">
+        <img src="./IMG/pro1.jpg" alt="">
+        <img src="./IMG/pro2.jpg" alt="">
+    </div>
+ </div>
+
+<div class="footercontent"></div>
+
+
+<!-- aos -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+  AOS.init({
+    duration: 800,
+  })
+</script>
+</body>
+</html>
