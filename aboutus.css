@@ -25,11 +25,11 @@
     transform: scale(1.09);
 }
 .abouthead h2,.whomhead h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .innerabout1 p,.innerwhom p{
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 2;
 }
