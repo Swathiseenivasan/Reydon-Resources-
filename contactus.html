@@ -104,7 +104,17 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
+            <select type="text" id="subject" name="subject" required>
+              <option value="" disabled selected>Select</option>
+              <option value="services">Services</option>
+              <option value="sales_enquiry">Sales Enquiry</option>
+              <option value="residential_plots">Residential Plots / Building</option>
+              <option value="commercial_plots">Commercial Plots / Building</option>
+              <option value="property_management">Property Management</option>
+              <option value="interior_design">Reydon Interior Design Furniture</option>
+              <option value="service_complaint">Service Complaint</option>
+            </select>
+            
             
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
