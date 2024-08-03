@@ -29,9 +29,22 @@
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid var(--primary-color);
-   
+
 }
 
+.contact-form {
+overflow-y: scroll;
+max-height: 500px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
 
 .contact-info h2, .contact-form h2 {
     margin-top: 0;

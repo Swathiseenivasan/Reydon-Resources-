@@ -13,7 +13,7 @@
             padding: 20px;
         }
         .li-head h2 {
-            font-size: clamp(1rem, 10vw, 38px);
+            font-size: clamp(1rem, 8vw, 20px);
             padding: 30px;
             color: #000000;
             text-align: center;
@@ -29,10 +29,25 @@
             content: '';
             position: absolute;
             bottom: 20px;
-            width: 150px;
+            width: 300px;
             height: 1.5px;
             background: #FFF;
 
+        }
+        .slidertitle{
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slidertitle::before{
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            width: 150px;
+            height: 1.5px;
+            background: #000000;
         }
         .inner-li-content, .advantages {
             background-color: rgba(0, 142, 121, 0.7);
