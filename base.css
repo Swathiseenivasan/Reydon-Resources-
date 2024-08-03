@@ -94,7 +94,7 @@ nav ul li a{
 font-size: 1.2rem;
 color: #000000 !important;
 }
-.submenu1{
+.submenu1,.inner-nav-sub{
 display: flex;
 position: absolute;
 justify-content: center;
@@ -108,6 +108,10 @@ transition: opacity 0.3s ease, transform 0.3s ease;
 pointer-events: none;
 z-index: 99;
 }
+.projectsubmenu{
+    transition: opacity 0s ease, transform 0s ease !important;
+
+}
 
 nav ul li:hover .submenu1{
 pointer-events: auto;
@@ -118,20 +122,9 @@ nav ul li:hover .submenu2{
     transform: translateX(-55px);
     margin-top: 10px;
 }
+
 .inner-nav-sub{
-    display: flex;
-position: absolute;
-justify-content: center;
-flex-direction: column;
-background: #ffffff;
-opacity: 0;
-width: 200px;
-padding: 10px;
-border-radius: 4px;
-transition: opacity 0.3s ease, transform 0.3s ease;
-pointer-events: none;
-z-index: 99;
-transform: translateX(105px);
+    transform: translateX(105px);
 margin-top: -30px;
 }
 
@@ -345,7 +338,7 @@ animation: move-bg 30s linear infinite;
 .slider-in-con2::before{
 content: '';
 position: absolute;
-background: url('./IMG/slide3.jpg') no-repeat center/cover;
+background: url('./IMG/main1.jpeg') no-repeat center/cover;
 box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 opacity: 0.89;
 left: 0;
@@ -360,7 +353,7 @@ animation: move-bg 30s linear infinite;
 .slider-in-con3::before{
 content: '';
 position: absolute;
-background: url('./IMG/slide1.jpg') no-repeat center/cover;
+background: url('./IMG/new4.jpg') no-repeat center/cover;
 box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 left: 0;
 top: 0;
@@ -374,7 +367,7 @@ animation: move-bg 30s linear infinite;
 .slider-in-con4::before{
     content: '';
     position: absolute;
-    background: url('./IMG/main1.jpeg') no-repeat center/cover;
+    background: url('./IMG/slide3.jpg') no-repeat center/cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
     left: 0;
     top: 0;
@@ -389,7 +382,7 @@ animation: move-bg 30s linear infinite;
     .slider-in-con5::before{
         content: '';
         position: absolute;
-        background: url('./IMG/main3.jpg') no-repeat center/cover;
+        background: url('./IMG/slide1.jpg') no-repeat center/cover;
         box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
         left: 0;
         top: 0;
@@ -413,6 +406,7 @@ animation: move-bg 30s linear infinite;
             z-index: -1;  
             opacity: 0.89;
             animation: move-bg 30s linear infinite;   
+            
             
             }
         
@@ -594,6 +588,8 @@ font-size: 1.3rem;
       border-radius: 4px;
       margin-bottom: 10px;
   }
+
+  
   
   .footer-newsletter button {
       padding: 10px 20px;
