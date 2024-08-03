@@ -738,7 +738,7 @@ font-size: 1.3rem;
             }
   }
 
-  @keyframes move-bg {
+@keyframes move-bg {
     from{
      background-position: 0% 0%;
     }
