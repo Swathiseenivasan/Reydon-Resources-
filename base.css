@@ -737,3 +737,12 @@ font-size: 1.3rem;
                 height:100vh;
             }
   }
+
+  @keyframes move-bg {
+    from{
+     background-position: 0% 0%;
+    }
+    to{
+     background-position: 100% 100%;
+    }
+ }
