@@ -280,10 +280,10 @@ tr:last-child td {
     margin: 0 auto;
     width: 100%;
     margin-bottom: 10%;
-    height: 100%;
+   
 }
 .carousel-item img{
-    height: 480px;
+    height:540px;
     transition: 0.3s;
 }
 .carousel-item img:hover{
@@ -300,7 +300,7 @@ tr:last-child td {
 
 
 .carousel-indicators{
-   transform: translateY(100px) !important;
+   transform: translateY(30px) !important;
 }
 .carousel-indicators li{
  background: orange !important;

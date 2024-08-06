@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Reydon Resources Private Limited</title>
+    <link rel="stylesheet" href="./faq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("./footer.html").then(response => {
+                if (!response.ok) {
+                    throw new Error("not fetched");
+                }
+                return response.text();
+            }).then(html => {
+                document.querySelector(".footercontent").innerHTML = html;
+            }).catch(err => {
+                console.log(err);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("./navbar.html").then(response => {
+                if (!response.ok) {
+                    throw new Error("not fetched");
+                }
+                return response.text();
+            }).then(html => {
+                document.querySelector("header").innerHTML = html;
+                const menubutton = document.querySelector('.menuiconc');
+                const navmenu = document.querySelector('nav ul');
+                if (menubutton && navmenu) {
+                    menubutton.addEventListener('click', () => {
+                        navmenu.classList.toggle('show');
+                    });
+                } else {
+                    console.log("not found navbar and menubtn");
+                }
+            }).catch(err => {
+                console.log(err);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <header></header>
+
+    <main class="container mt-5">
+        <section class="intro text-center">
+            <h2 style="font-size:clamp(1rem,10vw,38px);padding:30px; font-family: 'Cinzel Decorative', serif;">Reydon Resources Private Limited</h2>
+            <p>Aims to provide innovative and constructive solutions to fulfil all your dream homes inspired with a touch of AI technology!</p>
+        </section>
+
+        <!-- Real Estate Services -->
+        <section id="real-estate-services" class="my-5">
+            <h2>1. Real Estate Services</h2>
+            <div class="qa">
+                <h3>What services does Reydon Resources offer?</h3>
+                <p>Reydon Resources provides a wide range of services, including:</p>
+                <ul>
+                    <li><strong>Real Estate Services:</strong> Residential and commercial plots, building sales & services, and property management services.</li>
+                    <li><strong>Interior Design:</strong> Install unique designs of Reydon interior with high-quality materials for both homes and offices to make your dreams become reality.</li>
+                    <li><strong>Reydon Furnitures:</strong> High-quality modern furnishings for your present lifestyle solutions.</li>
+                    <li><strong>Modern AI-Linked Equipments and Services:</strong> Smart home devices and solutions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Property Management Services -->
+        <section id="property-management" class="my-5">
+            <h2>2. Property Management Services</h2>
+            <div class="qa">
+                <h3>2.1 What does property management involve?</h3>
+                <p>Property management companies handle various tasks related to properties, including tenant screening, rent collection, revenue generation, commercialization, maintenance, repairs, and legal matters.</p>
+                <h3>2.2 Why should I consider property management services?</h3>
+                <p>Outsourcing property management ensures efficient operations, tenant satisfaction, and overall profitability for property owners.</p>
+            </div>
+        </section>
+
+        <!-- Interior Design Services -->
+        <section id="interior-design" class="my-5">
+            <h2>3. Interior Design Services</h2>
+            <div class="qa">
+                <h3>3.1 What can Reydon Resources offer in terms of interior design?</h3>
+                <p>Reydon offers unique designs of interiors with high-quality standard materials for both homes and offices to make your dreams become reality.</p>
+                <h3>3.2 How can AI enhance interior design?</h3>
+                <p>Consider integrating AI-linked devices for smart homes and offices. These devices can enhance comfort, efficiency, and aesthetics.</p>
+            </div>
+        </section>
+
+        <!-- AI-Linked Devices for Homes and Offices -->
+        <section id="ai-devices" class="my-5">
+            <h2>4. AI-Linked Devices for Homes and Offices</h2>
+            <div class="qa">
+                <h3>4.1 What are some AI gadgets for homes?</h3>
+                <p>Reydon makes your home a Smart AI Home with:</p>
+                <ul>
+                    <li>Home Robot: A home assistant that controls devices.</li>
+                    <li>Lithium Inverter Smart Charging Unit</li>
+                    <li>AI-Powered Lights: Enhance gaming sessions.</li>
+                    <li>AI-Powered All Electronic Gadgets for Safety and Security with Modern Lifestyle</li>
+                    <li>AI-Powered Smart Kitchen for Home Makers and Foodies</li>
+                    <li>Mood-Monitoring Lighting: Adjusts based on your mood.</li>
+                    <li>Snore-Tackling Smart Pillow: Improves sleep quality.</li>
+                    <li>EV Smart Fast Charging Units Designed for Home</li>
+                    <li>Solar Panels for Domestic Use</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Awareness for our Valued Customers -->
+        <section id="awareness" class="my-5">
+            <h2>5. Awareness for our Valued Customers</h2>
+
+            <!-- Premium Plots -->
+            <div class="qa">
+                <h3>5.1 Premium Plots</h3>
+                <p><strong>Q: What are premium plots?</strong></p>
+                <p>A: Premium plots are high-value parcels of land located in prime areas, often offering better amenities, views, and proximity to important locations like business hubs and recreational facilities.</p>
+                <p><strong>Q: What factors should I consider when buying a premium plot?</strong></p>
+                <p>A: Consider location, infrastructure, legal clearances, future development plans, and proximity to essential services.</p>
+                <p><strong>Q: How is the price of a premium plot determined?</strong></p>
+                <p>A: Prices are influenced by location, plot size, amenities, demand, and future development prospects.</p>
+            </div>
+
+            <!-- Commercial Plots -->
+            <div class="qa">
+                <h3>5.2 Commercial Plots</h3>
+                <p><strong>Q: What are commercial plots?</strong></p>
+                <p>A: Commercial plots are land parcels designated for business activities like offices, shops, and other commercial establishments.</p>
+                <p><strong>Q: What should I check before purchasing a commercial plot?</strong></p>
+                <p>A: Verify zoning regulations, accessibility, infrastructure, legal documentation, and potential for business growth.</p>
+                <p><strong>Q: Can I get financing for a commercial plot purchase?</strong></p>
+                <p>A: Yes, many banks and financial institutions offer loans for purchasing commercial plots, subject to eligibility and documentation.</p>
+            </div>
+
+            <!-- Resorts & Farmhouses -->
+            <div class="qa">
+                <h3>5.3 Resorts & Farmhouses</h3>
+                <p><strong>Q: What is a resort?</strong></p>
+                <p>A: A resort is a commercial establishment offering lodging, entertainment, and recreational facilities.</p>
+                <p><strong>Q: What is a farmhouse?</strong></p>
+                <p>A: A farmhouse is a residential property located on agricultural land, often used as a second home or vacation retreat.</p>
+                <p><strong>Q: What are the uses of farmland?</strong></p>
+                <p>A: Uses include agriculture, horticulture, livestock farming, and sometimes agro-tourism.</p>
+                <p><strong>Q: What should I look for in a resort investment?</strong></p>
+                <p>A: Look for location, amenities, target market, competition, and return on investment.</p>
+                <p><strong>Q: Are resorts profitable?</strong></p>
+                <p>A: They can be profitable if well-managed and located in a popular tourist destination.</p>
+            </div>
+
+            <!-- Service Apartments -->
+            <div class="qa">
+                <h3>5.4 Service Apartments</h3>
+                <p><strong>Q: What are service apartments?</strong></p>
+                <p>A: Service apartments are fully furnished apartments available for short or long-term stays, providing hotel-like amenities and services.</p>
+                <p><strong>Q: What are the advantages of staying in a service apartment?</strong></p>
+                <p>A: Advantages include more space, kitchen facilities, cost-effectiveness for longer stays, and a homely atmosphere.</p>
+                <p><strong>Q: Can service apartments be a good investment?</strong></p>
+                <p>A: Yes, they can offer good returns, especially in urban areas with high demand from business travelers and tourists.</p>
+            </div>
+
+            <!-- Lithium Battery Inverters -->
+            <div class="qa">
+                <h3>5.5 Lithium Battery Inverters</h3>
+                <p><strong>Q: What are lithium battery inverters?</strong></p>
+                <p>A: Lithium battery inverters are devices that store energy in lithium batteries and convert it to electricity for home or business use during power outages.</p>
+                <p><strong>Q: What are the benefits of lithium battery inverters?</strong></p>
+                <p>A: Benefits include longer lifespan, higher efficiency, lower maintenance, and faster charging compared to traditional batteries.</p>
+                <p><strong>Q: How do I choose the right lithium battery inverter?</strong></p>
+                <p>A: Consider your energy needs, budget, brand reputation, warranty, and after-sales support.</p>
+            </div>
+
+            <!-- EV Charging Units -->
+            <div class="qa">
+                <h3>5.6 EV Charging Units</h3>
+                <p><strong>Q: What are EV charging units?</strong></p>
+                <p>A: EV charging units are devices that supply electric energy to recharge electric vehicles.</p>
+                <p><strong>Q: What types of EV chargers are available?</strong></p>
+                <p>A: There are Level 1 (slow), Level 2 (moderate), and DC fast chargers, each offering different charging speeds.</p>
+                <p><strong>Q: Can I install an EV charging unit at home?</strong></p>
+                <p>A: Yes, many EV charging units are designed for home installation, though you may need professional assistance for installation.</p>
+            </div>
+
+            <!-- Solar Panels -->
+            <div class="qa">
+                <h3>5.7 Solar Panels for Domestic and Farming Projects</h3>
+                <p><strong>Q: What are the benefits of installing solar panels?</strong></p>
+                <p>A: Benefits include reduced electricity bills, lower carbon footprint, renewable energy use, and potential government incentives.</p>
+                <p><strong>Q: How do I determine the right size of the solar panel system for my needs?</strong></p>
+                <p>A: Consider your energy consumption, roof space, budget, and sunlight availability.</p>
+                <p><strong>Q: Are solar panels a good investment for farms?</strong></p>
+                <p>A: Yes, they can significantly reduce energy costs and provide a reliable power source for agricultural operations.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footercontent"></footer>
+
+</body>
+
+</html>
