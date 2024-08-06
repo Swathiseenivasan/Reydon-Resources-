@@ -278,7 +278,7 @@ tr:last-child td {
 .slidergallery{
     width: 100%;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1300px;
     min-height: 1000px;
 }
 .carousel-item img{
@@ -288,23 +288,16 @@ tr:last-child td {
 .carousel-item img:hover{
     transform: scale(1.1);
 }
-.prev{
+/* .prev{
     background-color: orange;
     padding: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     font-size: x-large;
-}
+} */
 
-.carousel-control-prev  {
-    transform: translateX(-150px);
-    font-size: 3px;
-}
 
-.carousel-control-next {
-    transform: translateX(150px);
-}
 .carousel-indicators{
    transform: translateY(100px) !important;
 }
