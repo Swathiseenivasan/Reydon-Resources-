@@ -450,40 +450,78 @@ font-size: 1.3rem;
 
 #faq:hover,.contact_main:hover{
     background: #4CAF50;
-}.site-footer {
+}
+/* Overall footer styling */
+.site-footer {
     background-color: #0078a0;
-    padding: 20px 0;
+    padding: 15px 0; /* Reduced padding for smaller footer */
     color: #333333;
-    font-size: 0.8rem !important;
+    font-size: 0.75rem; /* Reduced font size */
     border-top: 2px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     box-shadow: inset 5px 5px 7px 2px rgba(255, 255, 255, 0.2);
-    font-family: 'Inter', sans-serif; /* Apply the Inter font family */
 }
 
-.site-footer h2,
-.site-footer h3 {
+.site-footer .site-cotainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted for equal gaps */
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.footer-company-info,
+.footer-quick-links,
+.footer-contact-info,
+.footer-newsletter,
+.footer-business-hours,
+.footer-legal {
+    flex: 1;
+    min-width: 180px; /* Reduced min-width for a smaller footer */
+    margin-bottom: 15px; /* Reduced bottom margin */
+    padding: 0 10px; /* Reduced padding */
+}
+
+.footer-logo {
+    width: 120px; /* Reduced logo width */
+    margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+.footer-company-info h2,
+.footer-legal h3,
+.footer-quick-links h3,
+.footer-contact-info h3,
+.footer-newsletter h3,
+.footer-business-hours h3 {
     font-family: 'Playfair Display', serif;
     color: #d9ff00;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
-.site-footer h2::after,
-.site-footer h3::after {
+.footer-company-info h2::after,
+.footer-legal h3::after,
+.footer-quick-links h3::after,
+.footer-contact-info h3::after,
+.footer-newsletter h3::after,
+.footer-business-hours h3::after {
     content: "";
-    width: 100px;
-    height: 3px;
+    width: 80px; /* Reduced underline width */
+    height: 2px; /* Reduced underline height */
     background-color: #00c053;
     display: block;
     position: relative;
     border-radius: 2px;
     left: 0;
-    margin-top: 5px;
+    margin-top: 4px; /* Reduced top margin */
 }
 
-.site-footer p {
+.footer-company-info p {
+    text-align: justify;
+    width: 90%;
+    line-height: 1.4; /* Reduced line-height */
     color: white !important;
-    font-size: 13px;
+    font-size: 12px; /* Reduced font size */
 }
 
 .footer-quick-links ul,
@@ -495,7 +533,7 @@ font-size: 1.3rem;
 
 .footer-quick-links ul li,
 .footer-legal ul li {
-    margin-bottom: 8px;
+    margin-bottom: 6px; /* Reduced margin-bottom */
 }
 
 .footer-quick-links ul li a,
@@ -505,8 +543,8 @@ font-size: 1.3rem;
     transition: color 0.3s;
     display: flex;
     align-items: center;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-size: 16px; /* Reduced font size */
+    font-family: "Inter", sans-serif;
 }
 
 .footer-quick-links ul li a:hover,
@@ -514,12 +552,16 @@ font-size: 1.3rem;
     color: #4CAF50;
 }
 
+.footer-social-media {
+    margin-top: 15px; /* Reduced top margin */
+}
+
 .footer-social-media a {
-    margin-right: 15px;
+    margin-right: 10px; /* Reduced right margin */
     text-decoration: none;
     color: #333333;
     transition: color 0.3s;
-    font-size: 1em;
+    font-size: 1.1em; /* Reduced font size */
 }
 
 .footer-social-media a:hover {
@@ -528,21 +570,21 @@ font-size: 1.3rem;
 
 .footer-copyright {
     text-align: center;
-    font-size: 0.9em;
-    padding-top: 10px;
+    font-size: 0.85em; /* Reduced font size */
+    padding-top: 8px; /* Reduced top padding */
     border-top: 1px solid #8B8B8B;
 }
 
 .footer-newsletter input[type="email"] {
-    width: 80%;
-    padding: 10px;
+    width: 75%; /* Reduced width */
+    padding: 8px; /* Reduced padding */
     border: 1px solid #333333;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced bottom margin */
 }
 
 .footer-newsletter button {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced padding */
     background-color: #4CAF50;
     color: #ffffff;
     border: none;
@@ -557,68 +599,34 @@ font-size: 1.3rem;
 
 .footer-contact-info p {
     color: white !important;
-    font-size: 13px;
+    font-size: 12px; /* Reduced font size */
+    font-family: "Inter", sans-serif;
 }
 
 .footer-contact-info p strong i {
     color: #d9ff00;
 }
 
-/* Flexbox and responsive layout */
-.site-footer .site-cotainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Adjusted for better spacing */
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.footer-company-info,
-.footer-quick-links,
-.footer-contact-info,
-.footer-newsletter,
-.footer-business-hours,
-.footer-legal {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
-    padding: 0 15px;
-}
-
-.footer-company-info {
-    flex: 1;
-}
-
-.footer-quick-links,
-.footer-contact-info,
-.footer-newsletter,
-.footer-business-hours,
-.footer-legal {
-    flex: 1;
-}
-
-.footer-social-media {
-    margin-top: 20px;
-}
-
 /* Responsive adjustments */
 @media (max-width: 1200px) {
     .site-footer .site-cotainer {
         flex-direction: column;
-        align-items: center;
+      
     }
 
-    .footer-company-info,
-    .footer-quick-links,
-    .footer-contact-info,
-    .footer-newsletter,
-    .footer-business-hours,
-    .footer-legal {
-        flex: 1 1 100%;
-        text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-quick-links ul li,
+    .footer-legal ul li {
+        margin-bottom: 4px; /* Further reduced margin-bottom */
+    }
+
+    .footer-newsletter input[type="email"] {
+        width: 100%;
     }
 }
+
   .menuiconc{
     display: none;
     cursor: pointer;
