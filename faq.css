@@ -52,8 +52,8 @@ body {
 }
 
 .section h2 {
-    color: #007bff;
-    border-bottom: 3px solid #007bff;
+    color: #0056b3; /* Adjusted color for better visibility */
+    border-bottom: 3px solid #0056b3;
     padding-bottom: 12px;
     margin-bottom: 25px;
     font-size: 2rem;
@@ -61,12 +61,22 @@ body {
 }
 
 /* QA Section Styling */
+.qa {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
 .qa h3 {
-    color: #333;
+    color: #0056b3; /* Adjusted color to match section headings */
     margin-top: 20px;
     font-size: clamp(18px, 2.5vw, 24px);
     font-weight: 700;
-    animation: fadeInUp 1s ease-out;
+    border-bottom: 2px solid #0056b3; /* Added underline for emphasis */
+    padding-bottom: 10px;
 }
 
 .qa p, .qa ul {
