@@ -283,7 +283,7 @@ tr:last-child td {
    
 }
 .carousel-item img{
-    height:540px;
+    height:600px;
     transition: 0.3s;
 }
 .carousel-item img:hover{
@@ -302,10 +302,7 @@ tr:last-child td {
 .carousel-indicators{
    transform: translateY(30px) !important;
 }
-.carousel-indicators li{
- background: orange !important;
- 
-}
+
 @media screen and (max-width: 768px) {
     th, td {
         padding: 10px;
